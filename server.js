@@ -27,12 +27,12 @@ app.use(cors())
 
 //no bodyparser because__You can use that, it's an older library that express has built in the same logic into urlencoded and json
 
-app.get('/', async(req,res)=>{
+app.get('/', async(req,response)=>{
     try{
-        res.render('index.ejs') //since ejs file that's why needs to be rendered
+        response.render('index.ejs') //since ejs file that's why needs to be rendered
 
     }catch (error){
-        res.status(500).send({message: error.message})
+        response.status(500).send({message: error.message})
 
     }
 })
