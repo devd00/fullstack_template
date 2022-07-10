@@ -17,6 +17,16 @@ MongoClient.connect(dbConnectionString) // point 5 from ins.txt
         db = client.db(dbName) //from the mongoDB name
         collection = db.collection('collection_z')
     })
+
+//middleware--set before all CRUD ops
+app.set('view engine', 'ejs') //set view engine to ejs
+app.use(express.static('public')) //creates a public folder where css, main.js files and all the files needed for the app are here
+app.use(express.urlencoded({extended:true}))
+app.use(express.json()) //helps express json objects back and forth 
+app.use(cors())
+
+//no bodyparser because__You can use that, it's an older library that express has built in the same logic into urlencoded and json
+
 app.listen(process.env.PORT || PORT, () => {
     console.log(`server is running on ${process.env.PORT}`)
 })
