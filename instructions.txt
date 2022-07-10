@@ -1,0 +1,7 @@
+1. Create server.js file
+2. Initialize npm and install dependencies
+//express, cors, dotenv, mongodb, ejs, nodemon(--save-dev)
+3.Require dependencies in server.js
+4.Declare variables
+5. Create Port
+//---Test Mongo and Port Connection
