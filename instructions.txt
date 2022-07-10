@@ -3,11 +3,15 @@
 //express, cors, dotenv, mongodb, ejs, nodemon(--save-dev)
 3.Require dependencies in server.js
 4.Declare variables
-5. Connect to MongoDB -add the connection string to the env file
+5. create gitignore file
+6. Connect to MongoDB -add the connection string to the env file
     5.1 add .env file to the gitignore file
-6. Create Port
+7. Create Port
 //---Test Mongo and Port Connection
-7. Set Middleware
-8. create gitignore file
+8. Set Middleware
 
-9. create public and view folders
+
+10. create public and view folders- add main.js and style.css to public and index.ejs to views
+11. Add content to main.js, style.css and index.ejs
+12. Create Heroku repo
+ 12.1 Install heroku cli if not installed

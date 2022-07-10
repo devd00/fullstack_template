@@ -19,7 +19,7 @@ MongoClient.connect(dbConnectionString) // point 5 from ins.txt
     })
 
 //middleware--set before all CRUD ops
-app.set('view engine', 'ejs') //set view engine to ejs
+app.set('view engine', 'ejs') //set view engine to ejs //goes into views foder to look for a ejs file
 app.use(express.static('public')) //creates a public folder where css, main.js files and all the files needed for the app are here
 app.use(express.urlencoded({extended:true}))
 app.use(express.json()) //helps express json objects back and forth 
